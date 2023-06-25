@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/head.html", {
+        "title": "Coinklap"
+    })
+
+    <!--  Navbar (Sidebar) ends  -->
+    
+</head>
+
+<body>
+
+    <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/navbar.html",{
+        "page": "portfolio.html"
+    })
+
+    <!--  Navbar (Sidebar) ends  -->
+    
+    <!--  Main content starts  -->    
+    
+    <div class="main-content">
+       
+        <!-- Header Starts -->
+
+        <div class="header">
+            <div class="header-container">
+                <div class="title">
+                    <h3 class="sub-heading">
+                        Overview
+                    </h3>
+                    <h2 class="heading">
+                        Portfolio
+                    </h2>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Header Ends -->    
+    
+    <!--  Main container starts   -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <div class="card asset-portfolio">
+                        <div class="card-header">
+                            <h3 class="title">
+                                Asset allocation
+                            </h3>
+                        </div>
+                        <div class="asset-stats">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-sm-6">
+                                    <div class="doughnut-chart">
+                                        <canvas id="assetChart" width="400" height="400">
+
+                                        </canvas>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <ul class="asset-list">
+                                        <li>
+                                            <span class="yellow"></span>
+                                            Bitcoin
+                                        </li>
+                                        <li>
+                                            <span class="blue"></span>
+                                            Etherium
+                                        </li>
+                                        <li>
+                                            <span class="green"></span>
+                                            Monero
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="asset-list">
+                            <ul class="list-table">
+                                <li class="table-data">
+                                    <div class="name">
+                                        <div class="icon">
+                                            <img src="./assets/icons/crypto-icons/bitcoin-cash.svg" alt="">
+                                        </div>
+                                        <div class="crr">Bitcoin Cash</div>
+                                    </div>
+                                    <div class="change">25%</div>
+                                    <div class="market-cap">1.0 BTC</div>
+                                </li>
+                                <li class="table-data">
+                                    <div class="name">
+                                        <div class="icon">
+                                            <img src="./assets/icons/crypto-icons/bitcoin-cash.svg" alt="">
+                                        </div>
+                                        <div class="crr">Bitcoin Cash</div>
+                                    </div>
+                                    <div class="change">12%</div>
+                                    <div class="market-cap">1.028403 BTC</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="card portfolio-transactions">
+                            <div class="card-header">
+
+                                <div class="sort-dropdown">
+                                    <button class="sort-btn" id="priceDaySortingBtn">Bought <i class="fas fa-sort"></i></button>
+                                    <ul class="sort-options" id="priceDaySortOptions">
+                                        <li>Bought</li>
+                                        <li>Sold</li>
+                                        <li>Received</li>
+                                        <li>Sent</li>
+                                    </ul>
+                                </div>
+                                <div class="sort-group">
+                                    <ul class="sort-options">
+                                        <li class="active">Bought</li>
+                                        <li>Sold</li>
+                                        <li>Received</li>
+                                        <li>Sent</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="card-body">
+                                <ul class="transaction-list">
+                                    <li>
+                                        <div class="row align-items-center">
+                                            <div class="col-auto pr-0 hide-in-small">
+                                                <img src="./assets/icons/crypto-icons/bitcoin.svg" alt="bitcoin-icon">
+                                            </div>
+                                            <div class="col">
+                                                <div class="crr-name"><img class="crypto-icon align-bottom" src="./assets/icons/crypto-icons/bitcoin.svg" alt="bitcoin-icon"> Bitcoin</div>
+                                                <div class="user-name">
+                                                    <span>To </span>
+                                                    sumit_hegde
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="crr-price">+50,000.00 INR</div>
+                                                <div class="crr-value">-0.0030 BTC</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row align-items-center">
+                                            <div class="col-auto pr-0 hide-in-small">
+                                                <img src="./assets/icons/crypto-icons/bitcoin.svg" alt="bitcoin-icon">
+                                            </div>
+                                            <div class="col">
+                                                <div class="crr-name"><img class="crypto-icon align-bottom" src="./assets/icons/crypto-icons/bitcoin.svg" alt="bitcoin-icon"> Bitcoin</div>
+                                                <div class="user-name">
+                                                    <span>To </span>
+                                                    sumit_hegde
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="crr-price">+50,000.00 INR</div>
+                                                <div class="crr-value">-0.0030 BTC</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row align-items-center">
+                                            <div class="col-auto pr-0 hide-in-small">
+                                                <img src="./assets/icons/crypto-icons/bitcoin.svg" alt="bitcoin-icon">
+                                            </div>
+                                            <div class="col">
+                                                <div class="crr-name"><img class="crypto-icon align-bottom" src="./assets/icons/crypto-icons/bitcoin.svg" alt="bitcoin-icon"> Bitcoin</div>
+                                                <div class="user-name">
+                                                    <span>To </span>
+                                                    sumit_hegde
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="crr-price">+50,000.00 INR</div>
+                                                <div class="crr-value">-0.0030 BTC</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="table-pagination align-items-center">
+                                <ul class="count">
+                                    <li class="inactive">Previous</li>
+                                    <li class="active">1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>Next</li>
+                                </ul>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    <!--  Main container ends   -->
+
+
+
+    </div>
+    
+    <!--  Main content ends-->
+
+
+
+    <!-- Optional JavaScript -->
+
+    @@include("./partials/scripts.html")
+    
+    <script>
+
+        var ctx = document.getElementById("assetChart");
+        var myDoughnutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Bitcoin', 'Etherium', 'Monero'],
+                datasets: [{
+                data: [60, 25, 15],
+                backgroundColor: ["#f3d461", "#4e3bce", "#00cd9d"]
+                }]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                cutoutPercentage: 70
+            }
+        });
+    </script>
+</body>
+
+</html>
+

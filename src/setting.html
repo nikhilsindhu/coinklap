@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/head.html", {
+        "title": "Coinklap"
+    })
+
+    <!--  Navbar (Sidebar) ends  -->
+    
+</head>
+
+<body>
+
+    <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/navbar.html",{
+        "page": "setting.html"
+      })
+
+    <!--  Navbar (Sidebar) ends  -->
+    
+    <!--  Main content starts  -->    
+    
+    <div class="main-content">
+
+        <!-- Header Starts -->
+
+        <div class="header">
+            <div class="header-container">
+                <div class="title">
+                    <h3 class="sub-heading">
+                        Account
+                    </h3>
+                    <h2 class="heading">
+                        Settings
+                    </h2>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Header Ends -->   
+    
+    <!--  Main container starts   -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <div class="card personal-info">
+                        <h3 class="subheading">
+                            Personal information
+                        </h3>
+                        <div class="row mini-row">
+                            <div class="col-12 col-md-6 mini-col">
+                                <div class="custom-form">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" class="is-valid" placeholder="Sumit Hegde">
+                                    <div class="feedback valid">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 mini-col">
+                                <div class="custom-form">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="is-invalid fix" placeholder="sumit_hegde">
+                                    <div class="feedback invalid">
+                                        Looks bad!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mini-row">
+                            <div class="col mini-col">
+                                <div class="custom-form">
+                                    <label for="name">Email</label>
+                                    <input type="text" class="" placeholder="work@sumithegde.com">
+                                    <!-- <div class="feedback valid">
+                                        Looks good!
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="col-auto mini-col align-self-end">
+                                <div class="verify-btn">
+                                    Verify now
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mini-row">
+                            <div class="col-12 col-md-6 mini-col">
+                                <div class="custom-form">
+                                    <label for="name">Profile picture</label>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto pr-0">  
+                                            <img class="user-img" src="assets/img/avatars/profiles/avatar-1.jpg" alt="">
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="" class="verify-btn">Change picture</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 mini-col">
+                                <div class="custom-form">
+                                    <label for="username">Phone number</label>
+                                    <input type="text" class="" placeholder="+91-9090909090">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="custom-form">
+                                    <label for="nationality">Nationality</label>
+                                    <select name="nationality" id="nationality">
+                                        <option value="" selected>Select your nationality</option>
+                                        <option value="">Indian</option>
+                                        <option value="">Pakistani</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-xl-6">
+                    <div class="card account-info">
+                        <h3 class="subheading">
+                            Account information
+                        </h3>
+                        <div class="row">
+                            <div class="col">
+                                <div class="custom-form">
+                                    <label for="nationality">Preferred Currency</label>
+                                    <select name="nationality" id="nationality">
+                                        <option value="" selected>Select your preferred currency</option>
+                                        <option value="">INR</option>
+                                        <option value="">USD</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-2 align-items-center">
+                            <div class="col">
+                                <span class="toggle-text">
+                                    Enable two-factor authentication
+                                </span>
+                            </div>
+                            <div class="col-auto">
+                                <div class="custom-form m-0">
+                                    <input type="checkbox" class="toggle-btn  align-self-center" name="auth" value="true">
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="subheading mt-4">
+                            Password
+                        </h3>
+                        <div class="row">
+                            <div class="col">
+                                <div class="custom-form">
+                                    <label for="name">Current Password</label>
+                                    <input type="password" class="" placeholder="**********">
+                                    <!-- <div class="feedback valid">
+                                        Looks good!
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="custom-form">
+                                    <label for="name">New Password</label>
+                                    <input type="password" class="" placeholder="**********">
+                                    <!-- <div class="feedback valid">
+                                        Looks good!
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-start justify-content-center">
+                <div class="col-auto">
+                    <button class="btn btn-green btn-inline mt-0 mb-4">
+                        Update Settings 
+                        <i class="fas fa-check-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    <!--  Main container ends   -->
+
+
+
+    </div>
+    
+    <!--  Main content ends-->
+
+    <!-- Optional JavaScript -->
+
+    @@include("./partials/scripts.html")
+    
+</body>
+
+</html>
+

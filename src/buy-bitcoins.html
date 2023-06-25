@@ -1,0 +1,327 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/head.html", {
+        "title": "Coinklap"
+    })
+
+    <!--  Navbar (Sidebar) ends  -->
+    
+</head>
+
+<body class="">
+   
+<!--   modal-open-->
+    <!-- Use modal-open class for modal dropdown -->
+
+        <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/navbar.html",{
+        "page": "buy-bitcoins.html"
+    })
+
+    <!--  Navbar (Sidebar) ends  -->
+    
+    <!--  Main content starts  -->    
+    
+    <div class="main-content">
+
+        <!-- Header Starts -->
+
+        <div class="header">
+
+            <div class="header-container">
+                <div class="title">
+                    <h3 class="sub-heading">
+                        Market
+                    </h3>
+                    <h2 class="heading">
+                        Buy Bitcoin 
+                        <span> <i class="fas fa-chevron-right"></i> From sumit_hegde</span>
+                    </h2>
+                </div>
+                <div class="actions">
+                    <button class="header-btn green-btn">
+                        Back to offers
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Header Ends --> 
+          
+    
+        <!--  Main container starts   -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-xl-6">
+
+                    <div class="card deal-detail">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <h6 class="subheading">
+                                    You are buying
+                                </h6>
+                                <div class="value currency">
+                                    <span class="icon">
+                                        <img src="assets/icons/crypto-icons/bitcoin.svg" alt="currency logo">
+                                    </span>
+                                    Bitcoin  
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h6 class="subheading">
+                                    Price
+                                </h6>
+                                <div class="value price">
+                                    ₹30,000
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-sm">
+                                <h6 class="subheading">
+                                    User
+                                </h6>
+                                <div class="row align-items-center">
+                                    <div class="col-auto pr-0">
+                                        <div class="user-img">
+                                            <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col info">
+                                        <h6 class="name">
+                                            Sumit Hegde
+                                            <span class="status active"></span>
+                                        </h6>
+                                        <span class="timestamp">
+                                            Seen: 10m ago
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h6 class="subheading">
+                                    Amount
+                                </h6>
+                                <div class="value">
+                                    0.0030 BTC
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <h6 class="subheading">
+                                    Limit
+                                </h6>
+                                <div class="value">
+                                    ₹10,000 - 80,000
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h6 class="subheading">
+                                    Payment method
+                                </h6>
+                                <div class="value method">
+                                    IMPS 
+                                </div>
+                                <div class="value method">
+                                    PayTM
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <h6 class="subheading">
+                                    Terms of Trade
+                                </h6>
+                                <div class="text">
+                                    If you find me offline or not responding in 5 mins then call me immediately on +919330587426
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-xl-6">
+
+                    <div class="card transaction-detail">
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="custom-form">
+                                    <label for="nationality">Amount</label>
+                                    <div class="row">
+                                        <div class="col join-right">
+                                            <input type="text" class="" placeholder="Amount in BTC">
+                                        </div>
+                                        <div class="col-auto join-left currency-opt">
+                                            <select name="nationality" id="nationality">
+                                                <option value="" selected>BTC</option>
+                                                <option value="">INR</option>
+                                                <option value="">USD</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-0">
+                                        <div class="col d-flex justify-content-center">
+                                            <div class="or-separator">or</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                            <div class="col join-right">
+                                                <input type="text" class="" placeholder="Amount in Fiat">
+                                            </div>
+                                            <div class="col-auto join-left currency-opt">
+                                                <select name="nationality" id="nationality">
+                                                    <option value="" selected>INR</option>
+                                                    <option value="">INR</option>
+                                                    <option value="">USD</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-0">
+                            <div class="col">
+                                <div class="custom-form">
+                                    <label for="nationality">Your payment mode</label>
+                                    <select name="nationality" id="nationality">
+                                        <option value="" selected>Select payment method</option>
+                                        <option value="">PayTM</option>
+                                        <option value="">IMPS</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-md-start justify-content-center">
+                            <div class="col-auto">
+                                <button class="btn btn-green btn-inline" id="buyCryptoBtn"> 
+                                        Buy Bitcoin
+                                    <i class="fas fa-check-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <!--  Main container ends   -->
+
+    </div>
+    
+    <!--  Main content ends-->
+
+        <!-- Modal Buy Bitcoins popup Contant Starts -->
+
+        <div class="modal" id="buyCrypto">    
+            <div class="modal-dialog mini-modal">
+                <div class="modal-contant">
+                    <div class="modal-header">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h4 class="heading">
+                                    <span class="header-icon">
+                                        <i class="fas fa-arrow-circle-down"></i>
+                                    </span>
+                                    Buy Bitcoin from 
+                                    <span class="name">sumit_hegde</span>
+                                </h4>
+                            </div>
+                            <div class="col-auto">
+                                <button class="close-btn d-flex justify-content-center closeModalBtn">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="trade-box">
+                            <div class="row align-items-center">
+                                <div class="col-auto pr-0">
+                                    <img class="crypto-icon" src="./assets/icons/crypto-icons/bitcoin.svg" alt="btc">
+                                </div>
+                                <div class="col pl-xs-0">
+                                    <h4 class="crypto-name">
+                                        Bitcoin
+                                    </h4>
+                                    <span class="crypto-value">
+                                        ₹510,000.00
+                                    </span>
+                                </div>
+                                <div class="col-auto">
+                                    <h6 class="trade-type text-right">
+                                        You are buying
+                                    </h6>
+                                    <span class="trade-value">
+                                        0.0030 BTC
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mt-4">
+                                <div class="col">
+                                    <h4 class="trade-type">
+                                        Payment method
+                                    </h4>
+                                    <span class="pay-option">
+                                        IMPS
+                                    </span>
+                                </div>
+                                <div class="col-auto">
+                                    <h6 class="trade-type text-right">
+                                        You are paying
+                                    </h6>
+                                    <span class="trade-value">
+                                        ₹30,000
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-action">
+                        <div class="row mini-row">
+                            <div class="col-12 col-md-6 mini-col">
+                                <button class="btn"> 
+                                    Cancel 
+                                    <i class="fas fa-times-circle"></i>
+                                </button>
+                            </div>
+
+                            <div class="col-12 col-md-6 mini-col">
+                                <button class="btn btn-green"> 
+                                    Buy Bitcoin
+                                    <i class="fas fa-check-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Modal Contant Ends -->
+
+        <div class="modal-backdrop m-fadeOut"></div>
+
+    <!-- Optional JavaScript -->
+
+    @@include("./partials/scripts.html")
+    
+</body>
+
+</html>
+

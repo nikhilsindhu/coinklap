@@ -1,0 +1,918 @@
+    // ------ different cards layout  -----
+    
+    .terms{
+        padding: 2rem;
+        flex: 1 1 auto;
+        
+        .heading{
+            font-family: $book;
+            font-size: .7rem;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            color: $cool-grey;
+            margin-bottom: .5rem;
+        }
+        
+        .content{
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: .75rem;
+            font-family: $light;
+            font-size: .8rem;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.6;
+            color: $dark;
+            
+            &:last-of-type{
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+
+    // ======================== Deal Details ====================
+
+    .deal-detail{
+        padding: 2rem;
+
+        .row{
+            margin-bottom: 1rem;
+
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+
+        .subheading{
+            font-family: $book;
+            font-size: .7rem;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            color: $cool-grey;
+            margin-bottom: .35rem;
+        }
+
+        .value{
+            font-family: $light;
+            font-size: .8rem;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 1px;
+            color: $dark;
+            margin-bottom: .75rem;
+        }
+
+        .text{
+            object-fit: contain;
+            font-family: $light;
+            font-size: .8rem;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.63;
+            letter-spacing: 0.5px;
+            color: $dark;
+            margin-bottom: .75rem;
+        }
+
+        .user-img{
+            height: 1.8rem;
+            width: 1.8rem;
+            border-radius: 100%;
+            overflow: hidden;
+            
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+        .info{
+            margin-left: .5rem;
+            padding: 0px;
+            
+            .name{
+                display: block;
+                font-family: $book;
+                font-size: .8rem;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                color: $dark;
+
+                .status{
+                    display: inline-block;
+                    margin-left: .25rem;
+                    height: .5rem;
+                    width: .5rem;
+                    border-radius: 100%;
+                    background-color: $cool-grey;
+                }
+
+                .active{
+                    background-color: $green-blue;
+                }
+            }
+            
+            .timestamp{
+                display: block;
+                font-family: $light;
+                font-size: .6rem;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                padding-top: .1rem;
+                line-height: normal;
+                letter-spacing: 1px;
+                color: $dark;                  
+            }
+        }
+
+        .trans-type{
+            font-family: $bold;
+            color: $blurple;
+        }
+
+        .currency{
+            font-family: $bold;
+            padding-left: 1.65rem;
+            padding-top: .1rem;
+            position: relative;
+            line-clamp: 1.25rem;
+
+            .icon{
+                position: absolute;
+                left: 0px;
+                top: -.1rem;
+                height: 1.25rem;
+                width: auto;
+
+                img{
+                    display: block;
+                    width: auto;
+                    height: 100%;
+                }
+            }
+        }
+
+        .price{
+            font-family: $book;
+            color: $blurple;
+        }
+
+        .method{
+            font-family: $medium;
+            font-size: .7rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 1px;
+            color: $blurple;
+            margin-bottom: .75rem;
+            padding: .3rem .6rem;
+            background: #e8e8fa;
+            border-radius: .2rem;
+            display: inline-block;
+        }
+    }
+
+    .transaction-detail{
+        padding: 2rem;
+
+        .row{
+            margin-bottom: 1rem;
+
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+
+        .subheading{
+            font-family: $book;
+            font-size: .7rem;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            color: $cool-grey;
+            margin-bottom: .35rem;
+        }
+
+        .time-left{
+            font-family: $light;
+            font-size: 1.25rem;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            color: $blurple;
+        }
+
+        .value{
+            font-family: $light;
+            font-size: .8rem;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 1px;
+            color: $dark;
+            margin-bottom: .75rem;
+        }
+
+        .highlight{
+            font-family: $book;
+            font-size: .7rem;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.6;
+            letter-spacing: 0.2px;
+            color: $dark;
+            margin-bottom: .5rem;
+        }
+
+        .notes{
+            font-family: $light;
+            font-size: .7rem;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.6;
+            letter-spacing: 0.2px;
+            color: $dark;
+            margin-bottom: .75rem;
+        }
+
+        .currency-opt{
+            min-width: 5rem !important;
+        }
+    }
+
+    .chat-box{
+        
+        .chat-header{
+            padding: 2rem;  
+            padding-bottom: 1rem;
+            border-bottom: solid 1px $pale-grey-two;
+            
+            .user-info{
+                
+                .subheading{
+                    font-family: $book;
+                    font-size: .7rem;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: 0.5px;
+                    color: $cool-grey;
+                    margin-bottom: .4rem;
+                }
+                
+                .user-img{
+                    height: 1.8rem;
+                    width: 1.8rem;
+                    border-radius: 100%;
+                    overflow: hidden;
+                    
+                    img{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                
+                .info{
+                    margin-left: .5rem;
+                    padding: 0px;
+                    
+                    .name{
+                        display: block;
+                        font-family: $book;
+                        font-size: .8rem;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        color: $dark;
+                    }
+                    
+                    .timestamp{
+                        display: block;
+                        font-family: $light;
+                        font-size: .6rem;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-stretch: normal;
+                        padding-top: .1rem;
+                        line-height: normal;
+                        letter-spacing: 1px;
+                        color: $dark;                  
+                    }
+                }
+            }
+            
+            .user-contact{
+                
+                .subheading{
+                    font-family: $book;
+                    display: block;
+                    font-size: .7rem;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: 0.5px;
+                    color: $cool-grey;
+                    margin-bottom: .25rem;
+                }
+                
+                .contact{
+                    display: block;
+                    font-family: $light;
+                    font-size: .7rem;
+                    line-height: 1.25;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    color: $dark;
+                    margin-bottom: .2rem;
+                    
+                    &:last-of-type{
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+        
+        .chat-dropdown{
+            padding: .75rem 2rem;
+            border-bottom: solid 1px $pale-grey-two;
+            
+            .title{
+                display: block;
+                font-family: $medium;
+                font-size: .8rem;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                color: $blurple;
+            }
+            
+            .drop-down{
+                color: $blurple;
+                font-size: .9rem;
+                padding: .25rem;
+                cursor: pointer;
+                transition: height .5s ease-in-out;
+                -moz-transition: height .5s ease-in-out;
+                -webkit-transition: height .5s ease-in-out;
+                -o-transition: height .5s ease-in-out;
+            }
+
+            .drop-down.rotate-icon{
+                transform: rotate(180deg)
+            }
+
+
+        }
+
+        .chat-body{
+            height: 0px;
+            // transition: all .8s linear;
+            transition: height .5s ease-in-out;
+            -moz-transition: height .5s ease-in-out;
+            -webkit-transition: height .5s ease-in-out;
+            -o-transition: height .5s ease-in-out;
+        }
+        
+        .chat-container{
+            padding: 1rem 2rem;
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            border-bottom: solid 1px $pale-grey-two;
+            transition: height .5s ease-in-out;
+            -moz-transition: height .5s ease-in-out;
+            -webkit-transition: height .5s ease-in-out;
+            -o-transition: height .5s ease-in-out;
+            
+            .scrollable-body{
+                width: 100%;
+                height: 100%;
+                max-height: calc(70vh - 5rem);
+                overflow-y: scroll;
+                display: block;
+                
+                .message-list{
+                    display: block;
+                    padding-right: .5rem;
+                    
+                    .message{
+                        margin-bottom: .5rem;
+                        
+                        .text{
+                            display: inline-block;
+                            border-radius: .5rem;
+                            padding: .6rem .75rem;
+                            font-family: $book;
+                            font-size: .7rem;
+                            font-weight: normal;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.5;
+                            letter-spacing: 0.2px;    
+                            color: $dark;
+                            background-color: $pale-grey-three;
+                        }
+                        
+                        .timestamp{
+                            margin-top: .5rem;
+                            font-family: $light;
+                            font-size: .45rem;
+                            font-weight: 300;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.5;
+                            letter-spacing: 0.3px;
+                            color: $dark;
+                        }
+                    }
+                    
+                    .request{
+                        text-align: right;
+                        
+                        .text{
+                            border-bottom-right-radius: 0px !important;
+                        }
+                    }
+                    
+                    .reply{
+                        text-align: left;
+                        
+                        .text{
+                            border-bottom-left-radius: 0px !important;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .chat-form{
+            padding: .25rem 2rem;
+            display: block;
+            width: 100%;
+            background-color: #fafafa;
+            
+            .input-field{
+                width: 100%;
+                
+                .text-input{
+                    width: 100%;
+                    display: block;
+                    font-family: $book;
+                    font-size: .75rem;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 2.5rem;
+                    letter-spacing: 0.2px;
+                    color: $dark;
+                    background-color: #fafafa;
+                }
+                
+            }
+            
+            .form-icons{
+                    
+                    .icon{
+                        margin-left: 1rem;
+                        cursor: pointer;
+                        
+                        &:first-of-type{
+                            margin-left: 0px;
+                        }
+                        
+                        i{
+                            color: $blurple;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+        }
+    }
+
+    .toggle-chat{
+        height: 70vh !important;
+        transition: all .8s linear;
+        transition: height .5s ease-in-out;
+            -moz-transition: height .5s ease-in-out;
+            -webkit-transition: height .5s ease-in-out;
+            -o-transition: height .5s ease-in-out;
+    }
+
+    .personal-info,
+    .account-info{
+
+        padding: 2rem;
+
+        .row{
+            margin-bottom: .5rem;
+
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+
+        .subheading{
+            font-family: $book;
+            font-size: 1rem;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            color: $dark;
+            margin-bottom: 1.25rem !important;
+        }
+
+        .verify-btn{
+            font-family: $medium;
+            font-size: .7rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.3px;
+            color: $blurple;
+            margin-bottom: 1rem;
+            padding: .25rem;
+            cursor: pointer;
+        }
+
+        .toggle-text{
+            font-family: $medium;
+            font-size: .8rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.6px;
+            color: $cool-grey;
+        }
+    }
+
+    // ======================== Asset Portfolio====================
+
+    .asset-portfolio{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        .card-header{
+            padding: 1.5rem 2rem 1rem;
+            background-color: #fff;
+            border-bottom: none;
+
+            .title{
+                object-fit: contain;
+                font-family: $book;
+                font-size: 1rem;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 0.5px;
+                color: $dark;
+            }
+        }
+
+        .asset-stats{
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid $pale-grey-two;
+
+            .doughnut-chart{
+                height: 8rem;
+                width: 8rem;
+                display: block;
+            }
+
+            .asset-list{
+
+                li{
+                    font-family: $book;
+                    font-size: .8rem;
+                    line-height: 1rem;
+                    color: $dark;
+                    margin-bottom: 1rem;
+
+                    &:last-of-type{
+                        margin-bottom: 0px;
+                    }
+
+                    span{
+                        display: inline-block;
+                        height: 1rem;
+                        width: 1rem;
+                        border-radius: 100%;
+                        margin-right: .35rem;
+                        transform: translate(0px,.15rem);
+                        background-color: #e7e9f3;
+                    }
+
+                    .yellow{
+                        background-color: $light-mustard;
+                    }
+
+                    .blue{
+                        background-color: $blurple;
+                    }
+
+                    .green{
+                        background-color: $green-blue;
+                    }
+                }
+            }
+        }
+
+        .asset-list{
+
+
+            .list-table{
+                display: flex;
+                flex-direction: column;
+
+                .table-data{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 2rem;
+                    border-bottom: 1px solid $pale-grey-two;
+
+                    & > *{
+                        flex: 1 1 auto;
+                    }
+
+
+                    &:last-of-type{
+                        border-bottom: none;
+                    }
+
+                    .name{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+
+                        .icon{
+                            height: 1.75rem;
+                            width: 1.75rem;
+                            margin-right: .75rem;
+
+                            img{
+                                height: 100%;
+                                width: auto;
+                            }
+                        }
+
+                        .crr{
+                            font-size: .9rem;
+                            font-family: $book;
+                            color: $dark;
+                        }
+                    }
+
+                    .change{
+                        flex: 1 2 auto;
+                        font-size: .8rem;
+                        font-family: $light;
+                        color: $dark;
+                    }
+
+                    .market-cap{
+                        font-family: $light;
+                        color: $dark;
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // ========================  Portfolio Transactions ====================
+
+    .portfolio-transactions{
+
+        .card-header{
+            padding: 1.5rem 2rem;
+            background-color: #fff;
+            border-bottom: 1px solid $pale-grey-two;
+            display: block !important;
+
+            // ========== SORT DROPDOWN CSS ============
+
+            .sort-dropdown{
+                display: none;
+                position: relative;
+                width: 5rem;
+
+                .sort-btn{
+                    font-size: .65rem;
+                    color: $blurple;
+                    padding: .5rem .75rem;
+                    cursor: pointer;
+                    font-family: $medium;
+                    background: $very-light-purple;
+                    border-radius: 4px;
+                    width: 5rem;
+
+                    i{
+                        padding-left: .2rem;
+                    }
+                    
+                }
+
+                .sort-options{
+                    display: none;
+                    position: absolute;
+                    width: 100%;
+                    z-index: 1;
+                    border: 1px solid #cbcbf7;
+                    border-radius: 4px;
+
+                    li{
+
+                        font-size: .65rem;
+                        color: $blurple;
+                        padding: .5rem .75rem;
+                        cursor: pointer;
+                        font-family: $medium;
+                        background: $very-light-purple;
+                        border-bottom: 1px solid #cbcbf7;
+    
+                        &:last-of-type{
+                            border-bottom-left-radius: 4px;
+                            border-bottom-right-radius: 4px;
+                            border-bottom: none;
+                        }
+
+                        &:first-of-type{
+                            border-top-left-radius: 4px;
+                            border-top-right-radius: 4px;
+                        }
+    
+                    }
+                }
+            }
+
+            // ========== sort group BUTTONSS =============
+
+            .sort-group{
+
+                display: block;
+
+                .sort-options{
+                    display: flex;
+                    flex-direction: row;
+
+                    li{
+
+                        font-size: .8rem;
+                        color: $blurple;
+                        padding: .5rem .75rem;
+                        cursor: pointer;
+                        margin-left: .2rem;
+                        font-family: $medium;
+    
+                        &:last-of-type{
+                            margin-left: 0px;
+                        }
+    
+                    }
+    
+                    .active{
+    
+                        background: $very-light-purple;
+                        border-radius: 4px;
+    
+                    }
+                }
+            }
+        }
+
+        .card-body{
+            padding: 0px;
+
+            .transaction-list{
+
+                li{
+                    padding: 1rem 2rem;
+                    border-bottom: 1px solid $pale-grey-two;
+
+                    &:last-of-type{
+                        border: none;
+                    }
+                }
+
+                .crypto-icon{
+                    display: none;
+                }
+
+                .crr-name{
+                    font-family: $book;
+                    font-size: .8rem;
+                    letter-spacing: 0.2px;
+                    color: $dark;
+                    margin-bottom: .25rem;
+                }
+    
+                .user-name{
+                    font-family: $book;
+                    font-size: .7rem;
+                    color: $dark;
+    
+                    span{
+                        color: $cool-grey;
+                    }
+                }
+    
+                .crr-price{
+                    font-size: .8rem;
+                    letter-spacing: 1px;
+                    color: $blurple;
+                    text-align: right;
+                    margin-bottom: .25rem;
+                }
+    
+                .crr-value{
+                    font-family: $light;
+                    font-size: .8rem;
+                    font-weight: 300;
+                    letter-spacing: 1.4px;
+                    text-align: right;
+                    color: $dark;
+                }
+            }
+        }
+    }
+
+    // =============================  Exchange Info ====================
+    
+    .exchange-info{
+        padding: 2rem;
+        position: relative;
+        overflow: visible !important;
+
+
+        .title{
+            font-family: $book;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            color: $dark;
+            margin-bottom: 1rem;
+        }
+
+        .exchange-bridge{
+            display: block;
+            position: absolute;
+            border-radius: 100%;
+            box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.12);
+            background-color: #fff;
+            // bottom: -3rem;
+            bottom: 50%;
+            right: -3.8rem;
+            transform: translate(-50%, 50%);
+            height: 2.8rem;
+            width: 2.8rem;
+            text-align: center;
+            z-index: 5;
+
+            i{
+                font-size: 1.2rem;
+                line-height: 2.8rem;
+                color: $blurple;
+            }
+        }
+
+        .currency-opt{
+            min-width: 5rem !important;
+        }
+    }

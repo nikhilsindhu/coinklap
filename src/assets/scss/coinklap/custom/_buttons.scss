@@ -1,0 +1,50 @@
+.btn{
+    display: inline-block;
+    width: 100%;
+    font-family: $medium;
+    font-size: .9rem;
+    padding: .75rem .75rem;
+    text-align: center;
+    color: $steel;
+    line-height: 1rem;
+    border-radius: 5px;
+    border: 1px solid $pale-grey-two;
+    background-color: #fafcff;
+    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.03);
+    margin-top: 1rem;
+    cursor: pointer;
+    position: relative;
+
+    i{
+        font-size: .8rem;
+        margin-left: .25rem;
+    }
+}
+
+.btn-inline{
+    display: inline-block;
+    width: auto;
+    padding: .75rem 1.25rem;
+}
+
+.btn-green{
+    background: $green !important;
+    color: #fff !important;
+    border-color: $green !important;
+}
+
+.btn-white{
+    background: #fff !important;
+}
+
+.green{
+    color: $green-blue !important;
+}
+
+.danger{
+    color: $rosy-pink !important;
+}
+
+.cool{
+    color : $blurple !important;
+}

@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/head.html", {
+        "title": "Coinklap"
+    })
+
+    <!--  Navbar (Sidebar) ends  -->
+    
+</head>
+
+<body>
+  
+    <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/navbar.html",{
+        "page": "exchange.html"
+    })
+
+    <!--  Navbar (Sidebar) ends  -->
+    
+    <!--  Main content starts  -->    
+    
+    <div class="main-content">
+
+        <!-- Header Starts -->
+
+        <div class="header">
+            <div class="header-container">
+                <div class="title">
+                    <h3 class="sub-heading">
+                        Market
+                    </h3>
+                    <h2 class="heading">
+                        Exchange
+                    </h2>
+                </div>
+                <div class="actions">
+                    <div class="sort-dropdown">
+                        <button class="sort-btn" id="priceDaySortingBtn">All Time <i class="fas fa-sort"></i></button>
+                        <ul class="sort-options" id="priceDaySortOptions">
+                            <li class="active">All Time</li>
+                            <li>Year</li>
+                            <li>Month</li>
+                            <li>Week</li>
+                            <li>Day</li>
+                        </ul>
+                    </div>
+                    <div class="sort-group">
+                        <ul class="sort-options">
+                            <li class="active">All Time</li>
+                            <li>Year</li>
+                            <li>Month</li>
+                            <li>Week</li>
+                            <li>Day</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Header Ends -->  
+    
+    <!--  Main container starts   -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <div class="card exchange-info">
+                        <h3 class="title">
+                            You give
+                        </h3>
+                        <div class="row">
+                            <div class="col">
+                                <div class="trade-box">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto pr-0 hide-in-small">
+                                            <img class="crypto-icon-lg" src="assets/icons/crypto-icons/bitcoin.svg" alt="bitcoin-icon">
+                                        </div>
+                                        <div class="col">
+                                            <h4 class="crypto-name">
+                                                <img class="crypto-icon-sm align-bottom" src="assets/icons/crypto-icons/bitcoin.svg" alt="bitcoin-icon"> Bitcoin
+                                            </h4>
+                                            <span class="crypto-value">
+                                                ₹30,000.00
+                                            </span>
+                                        </div>
+                                        <div class="col-auto hide-in-small">
+                                            <h6 class="trade-type text-right">
+                                                You get
+                                            </h6>
+                                            <span class="trade-value">
+                                                0.0030 OMG
+                                            </span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-caret-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="custom-form mb-0">
+                                    <label for="nationality">Exchange amount</label>
+                                    <div class="row">
+                                        <div class="col join-right">
+                                            <input type="text" class="" placeholder="Amount">
+                                        </div>
+                                        <div class="col-auto join-left currency-opt">
+                                            <select name="nationality" id="nationality">
+                                                <option value="" selected>INR</option>
+                                                <option value="">BTC</option>
+                                                <option value="">USD</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="exchange-bridge">
+                           <i class="fas fa-sync-alt"></i>
+                        </div>
+                            
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="card exchange-info">
+                        <h3 class="title">
+                            You get
+                        </h3>
+                        <div class="row">
+                            <div class="col">
+                                <div class="trade-box">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto pr-0 hide-in-small">
+                                            <img class="crypto-icon-lg" src="assets/icons/crypto-icons/omisego-logo.svg" alt="bitcoin-icon">
+                                        </div>
+                                        <div class="col">
+                                            <h4 class="crypto-name">
+                                                <img class="crypto-icon-sm align-bottom" src="assets/icons/crypto-icons/omisego-logo.svg" alt="bitcoin-icon"> Omnise Go
+                                            </h4>
+                                            <span class="crypto-value">
+                                                ₹30,000.00
+                                            </span>
+                                        </div>
+                                        <div class="col-auto hide-in-small">
+                                            <h6 class="trade-type text-right">
+                                                You have
+                                            </h6>
+                                            <span class="trade-value">
+                                                0.0030 OMG
+                                            </span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-caret-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="custom-form mb-0">
+                                    <label for="nationality">Exchange amount</label>
+                                    <div class="row">
+                                        <div class="col join-right">
+                                            <input type="text" class="" placeholder="Amount">
+                                        </div>
+                                        <div class="col-auto join-left currency-opt">
+                                            <select name="nationality" id="nationality">
+                                                <option value="" selected>INR</option>
+                                                <option value="">BTC</option>
+                                                <option value="">USD</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <button class="btn btn-green btn-inline mt-0 mb-4" id="confirmExchange"> 
+                        Place Exchange order 
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+                </div>
+            </div>
+        
+        </div>
+    <!--  Main container ends   -->
+
+
+
+    </div>
+
+    <!-- Modal Exchange popup Contant Starts -->
+ 
+        <div class="modal" id="exchangeOrder">    
+            <div class="modal-dialog mini-modal">
+                <div class="modal-contant">
+                    <div class="modal-header">
+                        <div class="row align-items-top">
+                            <div class="col">
+                                <h4 class="heading">
+                                    <span class="header-icon">
+                                        <i class="fas fa-sync-alt"></i>
+                                    </span>
+                                    Review your exchange order
+                                </h4>
+                            </div>
+                            <div class="col-auto">
+                                <button class="close-btn d-flex justify-content-center closeModalBtn">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="trade-box">
+                            <div class="row align-items-center">
+                                <div class="col-auto pr-0">
+                                    <img class="crypto-icon-lg" src="assets/icons/crypto-icons/bitcoin.svg" alt="btc">
+                                </div>
+                                <div class="col">
+                                    <h4 class="crypto-name">
+                                        Bitcoin
+                                    </h4>
+                                    <span class="crypto-value">
+                                        ₹510,000.00
+                                    </span>
+                                </div>
+                                <div class="col-auto trade-info">
+                                    <h6 class="trade-type text-right">
+                                        You have
+                                    </h6>
+                                    <span class="trade-value">
+                                        0.0030 BTC
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review-bridge">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                        </div>
+                        <div class="trade-box">
+                            <div class="row align-items-center">
+                                <div class="col-auto pr-0">
+                                    <img class="crypto-icon-lg" src="assets/icons/crypto-icons//omisego-logo.svg" alt="btc">
+                                </div>
+                                <div class="col">
+                                    <h4 class="crypto-name">
+                                        Omnise Go
+                                    </h4>
+                                    <span class="crypto-value">
+                                        ₹30,000
+                                    </span>
+                                </div>
+                                <div class="col-auto">
+                                    <h6 class="trade-type text-right">
+                                        You get
+                                    </h6>
+                                    <span class="trade-value">
+                                        122.1950 OMG
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-action">
+                        <div class="row mini-row">
+                            <div class="col-12 col-md-6 mini-col">
+                                <button class="btn"> 
+                                    Cancel Order
+                                    <i class="fas fa-times-circle"></i>
+                                </button>
+                            </div>
+
+                            <div class="col-12 col-md-6 mini-col">
+                                <button class="btn btn-green"> 
+                                        Confirm order
+                                    <i class="fas fa-check-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+    <!-- Modal Contant Ends -->
+    
+    <!--  Main content ends-->
+
+    <div class="modal-backdrop m-fadeOut"></div>
+
+
+    <!-- Optional JavaScript -->
+
+    @@include("./partials/scripts.html")
+    
+</body>
+
+</html>
+

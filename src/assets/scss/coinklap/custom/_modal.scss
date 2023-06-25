@@ -1,0 +1,220 @@
+
+// =========== Custom Modal Starts ==========
+
+.modal-visible{
+    display: block !important;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    padding-right: 16px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    outline: 0;
+    transition: all .8s linear;
+
+    .modal-dialog{
+        position: relative;
+        display: flex;
+        min-height: calc(100% - 1rem);
+        align-items: center;
+        width: auto;
+        margin: .5rem auto;
+        pointer-events: none;
+        transition: all .2s linear;
+        
+        .modal-contant{
+            position: relative;
+            width: 100%;
+            pointer-events: auto;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            outline: 0;
+            background-color: #fff;
+            padding: 2rem;
+
+            .modal-header{
+                margin-bottom: 1.5rem;
+
+                .heading{
+                    font-family: $book;
+                    font-size: 1rem;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: 0.5px;
+                    line-height: 1.4rem;
+                    color: $dark;
+                    padding-left: 2rem;
+                    position: relative;
+
+                    .header-icon{
+                        position: absolute;
+                        display: inline-block;
+                        left: 0px;
+                        height: 1.4rem;
+                        width: 1.4rem;
+                        border-radius: 1px solid transparent;
+                        border-radius: 100%;
+                        background-color: $very-light-purple;
+                        text-align: center;
+                        margin-right: .5rem;
+
+                        i{
+                            font-size: .7rem;
+                            line-height: 1.4rem;
+                            color: $blurple;
+                        }
+                    }
+
+                    .name{
+                        font-family: $light;
+                        font-style: none !important;
+                    }
+                }
+
+                .close-btn{
+                    height: 1rem;
+                    width: 1rem;
+                    text-align: center;
+                    cursor: pointer !important;
+                    background: #fff;
+
+                    i{
+                        line-height: 1rem;
+                        font-size: .9rem;
+                        color: $dusk;
+
+                    }
+                }
+            }
+
+            .modal-body{
+
+                .custom-form{
+                    margin-bottom: 1.25rem;
+                }
+
+                .user-img{
+                    height: 2.5rem;
+                    width: 2.5rem;
+                    border-radius: 100%;
+                }
+
+                .option-link{
+                    font-family: $book;
+                    font-size: .7rem;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: 0.3px;
+                    color: $blurple;
+                    cursor: pointer;
+                    margin-bottom: 1.5rem;
+
+                    i{
+                        padding-left: .25rem;
+                    }
+                }
+
+                .toggle-text{
+                    font-family: $medium;
+                    font-size: .7rem;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: 0.6px;
+                    color: $cool-grey;
+                    margin-bottom: 1.25rem;
+
+                    .toggle-dec{
+                        display: block;
+                        font-family: $book;
+                        font-size: .6rem;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: 0.4px;
+                        color: $cool-grey;
+                        padding-top: .25rem;
+                    }
+                }
+
+                .qr-code{
+                    height: 10rem;
+                    width: auto;
+                    margin-bottom: 1.5rem;
+                    overflow: hidden;
+
+                    img{
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+
+                .share-btn{
+                    display: inline-block;
+                    font-family: $medium;
+                    font-size: .8rem;
+                    font-weight: 500;
+                    letter-spacing: 0.3px;
+                    color: $blurple;
+                    border-radius: 3px;
+                    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.03);
+                    background-color: $very-light-purple;
+                    padding: .5rem 1rem;
+                    cursor: pointer;
+
+                    i{
+                        font-size: .8rem;
+                        padding-left: .25rem;
+                    }
+                }
+    
+            }
+        }
+    }
+
+    .mini-modal{
+        max-width: 500px;
+    }
+    
+    .jumbo-modal{
+        max-width: 990px;
+    }
+}
+
+
+.advance-modal-minify{
+
+    .modal-dialog{
+        max-width: 500px !important;
+    }
+
+    .col-md-6{
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .modal-action{
+
+        .col-md-4{
+            flex: 0 0 50% !important;
+            max-width: 50% !important;
+        }
+    }
+
+    #orderAdvanceOption{
+        display: none !important;
+    }
+
+}

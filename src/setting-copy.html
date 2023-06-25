@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/head.html", {
+        "title": "Coinklap"
+    })
+
+    <!--  Navbar (Sidebar) ends  -->
+    
+</head>
+
+<body>
+
+    <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/navbar.html",{
+        "page": "setting-copy.html"
+      })
+
+    <!--  Navbar (Sidebar) ends  -->
+    
+    <!--  Main content starts  -->    
+    
+    <div class="main-content">
+       
+        <!-- Header Starts -->
+
+        <div class="header">
+            <div class="header-container">
+                <div class="title">
+                    <h3 class="sub-heading">
+                        Account
+                    </h3>
+                    <h2 class="heading">
+                        Settings
+                    </h2>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Header Ends -->       
+    
+    <!--  Main container starts   -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <div class="card personal-info">
+                        <h3 class="subheading">
+                            Personal information
+                        </h3>
+                        <div class="row mini-row">
+                            <div class="col-12 col-md-6 mini-col">
+                                <div class="custom-form">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" class="is-valid" placeholder="Sumit Hegde">
+                                    <div class="feedback valid">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 mini-col">
+                                <div class="custom-form">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="is-invalid fix" placeholder="sumit_hegde">
+                                    <div class="feedback invalid">
+                                        Looks bad!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <div class="toggle-text">
+                                    Realtime price update
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="custom-form m-0">
+                                    <input type="checkbox" class="toggle-btn  align-self-center" name="auth" value="true">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mini-row">
+                            <div class="col mini-col">
+                                <div class="custom-form">
+                                    <label for="name">Email</label>
+                                    <input type="text" class="" placeholder="work@sumithegde.com">
+                                    <!-- <div class="feedback valid">
+                                        Looks good!
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="col-auto mini-col align-self-end">
+                                <div class="verify-btn">
+                                    Verify now
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="custom-form">
+                                    <label for="nationality">Payment Method</label>
+                                    <select name="nationality" id="nationality">
+                                        <option value="" selected>Select your nationality</option>
+                                        <option value="">Indian</option>
+                                        <option value="">Pakistani</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-green btn-inline mt-0 mb-4">
+                        Update Settings 
+                        <i class="fas fa-check-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    <!--  Main container ends   -->
+
+
+
+    </div>
+    
+    <!--  Main content ends-->
+
+    <!-- Optional JavaScript -->
+
+    @@include("./partials/scripts.html")
+    
+</body>
+
+</html>
+

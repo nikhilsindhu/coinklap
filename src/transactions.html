@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/head.html", {
+        "title": "Coinklap"
+    })
+
+    <!--  Navbar (Sidebar) ends  -->
+    
+</head>
+
+<body>
+
+    <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/navbar.html",{
+        "page": "transactions.html"
+      })
+
+    <!--  Navbar (Sidebar) ends  -->
+    
+    <!--  Main content starts  -->    
+    
+    <div class="main-content">
+
+        <!-- Header Starts -->
+
+        <div class="header">
+
+            <div class="header-container">
+                <div class="title">
+                    <h3 class="sub-heading">
+                        Account
+                    </h3>
+                    <h2 class="heading">
+                        Transactions
+                    </h2>
+                </div>
+                <div class="actions">
+                    <button class="header-btn">Back to all transactions</button>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Header Ends --> 
+
+        <!--  Main container starts   -->
+        <div class="container-fluid end-to-end">
+            <div class="table-card">
+                <div class="transactions-table-container">
+                    <ul class="flex-table">
+                        <li class="table-head">
+                            <div class="crypto">Name</div>
+                            <div class="type">Type</div>
+                            <div class="qty">Qty</div>
+                            <div class="price">Price</div>
+                            <div class="total">Total</div>
+                            <div class="status">Status</div>
+                            <div class="action">Details</div>
+                        </li>
+                        <li class="table-data">
+                            <div class="crypto">
+                                <div class="heading">Name</div>
+                                <div class="value">
+                                    <span class="icon">
+                                        <img src="./assets/icons/crypto-icons/etherium.svg" alt="Etherium">
+                                    </span>
+                                    <span class="name">Etherium</span>
+                                </div>
+                            </div>
+
+                            <div class="type">
+                                <div class="heading">Type</div>
+                                <div class="value success">
+                                    Buy
+                                </div>
+                            </div>
+
+                            <div class="qty">
+                                <div class="heading">Qty</div>
+                                <div class="value">
+                                    0.0030
+                                </div>
+                            </div>
+
+                            <div class="price">
+                                <div class="heading">Price</div>
+                                <div class="value">
+                                    ₹30,000
+                                </div>
+                            </div>
+
+                            
+                            <div class="total">
+                                <div class="heading">Total</div>
+                                <div class="value">
+                                    ₹30,000
+                                </div>
+                            </div>
+
+                            <div class="status">
+                                <div class="heading">Status</div>
+                                <div class="value success">
+                                    Open
+                                </div>
+                            </div>
+
+                            <div class="actions">
+                                <div class="heading">Details</div>
+                                <div class="value"> 
+                                    <button class="action ml-0" id="sendCryptoBtn">
+                                        Details
+                                        <span class="icon">
+                                            <img src="assets/icons/general-icons/round-arrow-down.svg" alt="">
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="table-data">
+                                <div class="crypto">
+                                    <div class="heading">Name</div>
+                                    <div class="value">
+                                        <span class="icon">
+                                            <img src="./assets/icons/crypto-icons/bitcoin.svg" alt="Etherium">
+                                        </span>
+                                        <span class="name">Bitcoin</span>
+                                    </div>
+                                </div>
+    
+                                <div class="type">
+                                    <div class="heading">Type</div>
+                                    <div class="value success">
+                                        Buy
+                                    </div>
+                                </div>
+    
+                                <div class="qty">
+                                    <div class="heading">Qty</div>
+                                    <div class="value">
+                                        0.0030000000
+                                    </div>
+                                </div>
+    
+                                <div class="price">
+                                    <div class="heading">Price</div>
+                                    <div class="value">
+                                        ₹30,000
+                                    </div>
+                                </div>
+    
+                                
+                                <div class="total">
+                                    <div class="heading">Total</div>
+                                    <div class="value">
+                                        ₹30,000
+                                    </div>
+                                </div>
+    
+                                <div class="status">
+                                    <div class="heading">Status</div>
+                                    <div class="value success">
+                                        Open
+                                    </div>
+                                </div>
+    
+                                <div class="actions">
+                                    <div class="heading">Details</div>
+                                    <div class="value"> 
+                                        <button class="action ml-0" id="sendCryptoBtn">
+                                            Details
+                                            <span class="icon">
+                                                <img src="assets/icons/general-icons/round-arrow-down.svg" alt="">
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+    
+                            </li>
+                    </ul>
+                </div>
+                <div class="table-pagination align-items-center">
+                    <ul class="count">
+                        <li class="inactive">Previous</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>Next</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <!--  Main container ends   -->
+
+
+
+    </div>
+    
+    <!--  Main content ends-->
+
+    <!-- Optional JavaScript -->
+
+    @@include("./partials/scripts.html")
+
+</body>
+
+</html>
+

@@ -1,0 +1,163 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    overflow-y: auto;
+    width: 100%;
+    max-width: 10rem;
+    border: solid 1px #e7e9f3;
+    border-width: 0 1px 0 0;
+    padding: 0px;
+    background: #fff;
+
+    .navbar-action{
+        padding : 2rem 1.75rem;
+        padding-bottom: 1.5rem;
+        background: #fff;
+
+        .navbar-toggle{
+            display: none;
+            border-color: transparent;
+            background: transparent;
+            cursor: pointer;
+            outline: none;  
+            padding: .2rem;
+
+            img{
+                height: .9rem;
+                width: auto;
+            }
+        }
+
+        .navbar-brand-md{
+
+            display: none;
+            padding: .2rem;
+            cursor: pointer;
+            
+            .brand-logo{
+                display: block;
+                height: 1.25rem;
+                width: auto;
+            }
+        }
+
+        .navbar-brand-lg{
+            display: block;
+            padding: .25rem;
+            cursor: pointer;
+            
+            .brand-logo{
+                display: block;
+                width: auto;
+                height: 1.3rem;
+                height: auto;
+            }
+        }
+
+        .navbar-user{
+
+            display: none;
+            height: 1.75rem;
+            width: 1.75rem;
+            border-radius: 100%;
+            overflow: hidden;
+            cursor: pointer;
+            
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .navbar-option{
+        display: block;
+        padding : 1rem 2rem;
+        background: #fff;
+
+        .action-container{
+            display: block;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            
+            &:last-of-type{
+                margin-bottom: .5rem;
+            }
+            
+            .heading{
+                display: block;
+                font-family: $black;
+                font-size: .6rem;
+                font-weight: normal;
+                text-transform: uppercase;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.25;
+                letter-spacing: 1px;
+                color: $blurple;           
+            }
+            
+            .nav-links{
+                display: block;
+                width: 100%;
+                margin-top: 1rem;
+                overflow: hidden;
+                position: relative;
+                
+                .link{
+                    display: block;
+                    
+                    a{
+                        display: block;
+                        font-family: $medium;
+                        font-size: .7rem;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: $steel;
+                        padding: .25rem;
+                        padding-left: 1.2rem;
+                        line-height: 1.25;
+                        margin-bottom: .25rem;
+                        cursor: pointer;
+                        text-transform: capitalize;
+
+                        .link-icon{
+                            position: absolute;
+                            left: 2px;
+                            max-width: .7rem;
+                            max-height:  .7rem;
+                            
+                            path{
+                                fill : $steel;    
+                            }
+                            
+                        }
+                    }
+                    
+                    &:last-of-type{
+                        margin-bottom: 0rem;
+                    }
+                }
+                
+                .active{
+
+                    a{
+                        color: $blurple;
+
+                        .link-icon > path {
+                            fill : $blurple;  
+                        }
+
+                    }
+                }
+            }
+            
+        }
+    }
+}

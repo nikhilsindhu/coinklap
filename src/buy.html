@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/head.html", {
+        "title": "Coinklap"
+    })
+
+    <!--  Navbar (Sidebar) ends  -->
+    
+</head>
+
+<body>
+  
+    <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/navbar.html",{
+        "page": "buy.html"
+    })
+
+    <!--  Navbar (Sidebar) ends  -->
+    
+    <!--  Main content starts  -->    
+    
+    <div class="main-content">
+
+        <!-- Header Starts -->
+
+        <div class="header">
+
+            <div class="header-container">
+
+                <div class="action-container">
+                    <div class="title">
+                        <h3 class="sub-heading">
+                            Market
+                        </h3>
+                        <h2 class="heading">
+                            Buy Bitcoins
+                        </h2>
+                    </div>
+                    <div class="post-btn">
+                        <button class="header-btn green">
+                            Post Buy Order <i class="fas fa-plus-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="m-filter-container">
+                    <div class="title">
+                        Filters
+                    </div>
+                    <div class="filter-options">
+                        <div class="custom-form">
+                            <div class="row">
+                                <div class="col join-right">
+                                    <input type="text" class="" placeholder="Amount">
+                                </div>
+                                <div class="col-auto join-left" id="currencyOpt">
+                                    <select name="nationality" id="nationality">
+                                        <option value="" selected="">INR</option>
+                                        <option value="">INR</option>
+                                        <option value="">USD</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="custom-form payment-opt">
+                            <select name="nationality" id="nationality">
+                                <option value="" selected="">Payment method</option>
+                                <option value="">INR</option>
+                                <option value="">USD</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Header Ends -->   
+
+
+
+        <!--  Main container starts   -->
+        <div class="container-fluid end-to-end">
+            <div class="table-card">
+                <div class="buy-table-container">
+                    <ul class="flex-table">
+                        <li class="table-head">
+                            <div class="user">User</div>
+                            <div class="amount">Amount</div>
+                            <div class="price">Price</div>
+                            <div class="limit">Limit</div>
+                            <div class="methods">Payment method</div>
+                        </li>
+                        <li class="table-data">
+                            <div class="user">
+                                <div class="heading">User</div>
+                                <div class="value">
+                                    <span class="name">sumit_hegde</span>
+                                    <span class="status active"></span>
+                                </div>
+                            </div>
+
+                            <div class="amount">
+                                <div class="heading">Amount</div>
+                                <div class="value">
+                                    0.0040 BTC
+                                </div>
+                            </div>
+
+                            <div class="price">
+                                <div class="heading">Price</div>
+                                <div class="value">
+                                    ₹490,000.00
+                                </div>
+                            </div>
+
+                            <div class="limit">
+                                <div class="heading">Limit</div>
+                                <div class="value">
+                                    ₹30,000 - 200,000
+                                </div>
+                            </div>
+
+                            <div class="methods">
+                                <div class="heading">Payment method</div>
+                                <div class="value"> 
+                                    <span class="tag-btn">PayPal</span>
+                                </div>
+                            </div>
+
+                            <div class="action-btn">
+                                <div class="value">
+                                    <button class="table-btn">View Deal</button>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="table-data">
+                            <div class="user">
+                                <div class="heading">User</div>
+                                <div class="value">
+                                    <span class="name">sumit_hegde</span>
+                                    <span class="status active"></span>
+                                </div>
+                            </div>
+
+                            <div class="amount">
+                                <div class="heading">Amount</div>
+                                <div class="value">
+                                    0.0040 BTC
+                                </div>
+                            </div>
+
+                            <div class="price">
+                                <div class="heading">Price</div>
+                                <div class="value">
+                                    ₹490,000.00
+                                </div>
+                            </div>
+
+                            <div class="limit">
+                                <div class="heading">Limit</div>
+                                <div class="value">
+                                    ₹30,000 - 200,000
+                                </div>
+                            </div>
+
+                            <div class="methods">
+                                <div class="heading">Payment method</div>
+                                <div class="value"> 
+                                    <span class="tag-btn">PayPal</span>
+                                    <span class="tag-btn">UPI</span>
+                                    <span class="tag-btn">Tez</span>
+                                </div>
+                            </div>
+
+                            <div class="action-btn">
+                                    <button class="table-btn">View Deal</button>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="table-pagination align-items-center">
+                    <ul class="count">
+                        <li class="inactive">Previous</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>Next</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <!--  Main container ends   -->
+
+    </div>
+    
+    <!--  Main content ends-->
+
+
+
+    <!-- Optional JavaScript -->
+
+    @@include("./partials/scripts.html")
+    
+</body>
+
+</html>
+

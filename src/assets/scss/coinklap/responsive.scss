@@ -1,0 +1,1772 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Medium devices (tablets, 768px and up)
+@media (max-width:768px) {
+
+
+    // ========== HEADER CSS =========
+
+    .header{
+        padding: 2rem 3rem;
+    
+        // ===== ACTION CONTAINER FOR BUY TABLE =====
+    
+    
+        // ========== HEADER BUTTONSS =============
+    
+        .header-btn{
+
+            margin-top: .5rem;
+        
+            i{
+                display: none;
+            }
+        }
+    
+        // ========= HEADER CONTAINER ===========
+    
+        .header-container{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            justify-content: space-between;
+    
+            // =============== Mobile Container Title ==============
+    
+            // ========== HEADER ACTIONS =============
+    
+            .actions{
+    
+    
+                // ========== SORT DROPDOWN CSS ============
+    
+                .sort-dropdown{
+                    display: block;
+                }
+    
+                // ========== sort group BUTTONSS =============
+    
+                .sort-group{
+    
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+    .main-content{
+        margin-left: 0;
+    }
+
+    .navbar{
+
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        overflow-y: auto;
+        width: 100%;
+        max-width: 100%;
+        border: solid 1px #e7e9f3;
+        border-width: 0 1px 0 0;
+        padding: 0px;
+    
+        .navbar-action{
+            padding : 1rem 1.25rem;
+            background: $blurple;
+    
+            .navbar-toggle{
+                display: block;
+                color: #6e84a3;
+                border-color: transparent;
+                background: transparent;
+                cursor: pointer;
+                outline: none;  
+                padding: .2rem;
+    
+                img{
+                    height: .9rem;
+                    width: auto;
+                }
+            }
+    
+            .navbar-brand-md{
+                display: block;
+            }
+    
+            .navbar-brand-lg{
+                display: none;
+            }
+    
+            .navbar-user{
+                display: block;
+            }
+        }
+
+        .nav-active{
+            height: 23rem !important;
+        }
+    
+        .navbar-option{
+            padding : 0px;
+            border: none !important;
+            border-bottom: solid 1px #e7e9f3 !important;
+            background: #fff;
+            height: 0px;
+            overflow: hidden;
+            transition: height .5s ease-in-out;
+            -moz-transition: height .5s ease-in-out; /* Firefox 4 */
+            -webkit-transition: height .5s ease-in-out; /* Safari and Chrome */
+            -o-transition: height .5s ease-in-out;
+
+            .navbar-padding{
+                padding: 1.25rem 2.25rem 1rem;
+            }
+    
+            .action-container{
+                display: block;
+                width: 100%;
+                margin-bottom: 1.5rem;
+                
+                &:last-of-type{
+                    margin-bottom: .5rem;
+                }
+                
+                .heading{
+                    display: block;
+                    font-family: $black;
+                    font-size: .6rem;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.25;
+                    letter-spacing: 1px;
+                    color: $blurple;           
+                }
+                
+                .nav-links{
+                    display: block;
+                    width: 100%;
+                    margin-top: .75rem;
+                    overflow: hidden;
+                    position: relative;
+                    
+                    .link{
+                        display: block;
+                        
+                        a{
+                            display: block;
+                            font-family: $medium;
+                            font-size: .7rem;
+                            font-weight: normal;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            color: $steel;
+                            padding: .25rem;
+                            padding-left: 1.2rem;
+                            line-height: 1.25;
+                            margin-bottom: .25rem;
+                            cursor: pointer;
+                            text-transform: capitalize;
+    
+                            .link-icon{
+                                position: absolute;
+                                left: 2px;
+                                max-width: .7rem;
+                                max-height:  .7rem;
+                                
+                                path{
+                                    fill : $steel;    
+                                }
+                                
+                            }
+                        }
+                        
+                        &:last-of-type{
+                            margin-bottom: 0rem;
+                        }
+                    }
+                    
+                    .active{
+                        color: $blurple;
+                        
+                        .link-icon > path {
+                            fill : $blurple;  
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .personal-info,
+    .account-info{
+
+        .subheading{
+            margin: .5rem 0px 1.5rem !important;
+        }
+    }
+
+
+    // ----- But Table ----
+
+    .table-pagination{
+        display: none;
+    }
+
+    .buy-table-container{
+        width: 100%;
+    
+        .flex-table{
+            display: flex;
+            flex-direction: column;
+    
+            li{
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: baseline;
+                flex-wrap: nowrap;
+    
+                & > * {
+                    flex: 2 0 50% !important;
+                }
+    
+            }
+    
+            li.table-head{
+                display: none;
+                border: none;
+            }
+    
+            li.table-data{
+                font-size: .8rem;
+                font-family: $book;
+                padding: 1.25rem 1rem;
+                border: none !important;
+                flex-direction: row;
+                justify-content: space-between;
+                border-bottom: solid 1px $pale-grey-two !important;
+                color: $dark;
+                flex-wrap: wrap;
+                max-width: 100%;
+
+                &:first-of-type{
+                    border: none;
+                }
+
+                &:last-of-type{
+                    border-bottom: none !important;
+                }
+                
+                .user{
+                    flex: 2 0 50%;
+                    margin-bottom: 1rem;
+                    order: 1;
+    
+                    .heading{
+                        display: flex;
+                        font-size: .6rem;
+                        color: $cool-grey;
+                        margin-bottom: .25rem;
+                    }
+    
+                    .value{
+                        display: flex;
+                        align-items: center;
+    
+                        .name{
+                            letter-spacing: 1px;
+                            color: $dark;
+                            font-family: $light;
+                        }
+    
+                        .status{
+                            margin-left: .5rem;
+                            height: .5rem;
+                            width: .5rem;
+                            border-radius: 100%;
+                            background-color: $cool-grey;
+                        }
+    
+                        .active{
+                            background-color: $green-blue;
+                        }
+                    }
+                }
+    
+                .amount{
+                    margin-bottom: 1rem;
+                    flex: 2 0 50%;
+                    order: 2;
+
+                    .heading{
+                        display: flex;
+                        font-size: .6rem;
+                        color: $cool-grey;
+                        margin-bottom: .25rem;
+                    }
+    
+                    .value{
+                        letter-spacing: 1px;
+                        color: $dark;
+                        font-family: $light;
+                    }
+                }
+    
+                .price{
+
+                    flex: 2 0 50%;
+                    margin-bottom: 1rem;
+                    order: 4;
+    
+                    .heading{
+                        display: flex;
+                        font-size: .6rem;
+                        color: $cool-grey;
+                        margin-bottom: .25rem;
+                    }
+    
+                    .value{
+                        letter-spacing: 1px;
+                        color: $blurple;
+                    }
+                }
+    
+                .limit{
+
+                    flex: 2 0 50%;
+                    margin-bottom: 1rem;
+                    order: 3;
+
+                    .heading{
+                        display: flex;
+                        font-size: .6rem;
+                        color: $cool-grey;
+                        margin-bottom: .25rem;
+                    }
+    
+                    .value{
+                        letter-spacing: 1px;
+                        color: $dark;
+                    }
+                }
+    
+                .methods{
+
+                    flex: 2 0 50%;
+                    order: 5;
+
+                    .heading{
+                        display: flex;
+                        font-size: .6rem;
+                        color: $cool-grey;
+                        margin-bottom: .25rem;
+                    }
+    
+                    .value{
+    
+                        .tag-btn{
+                            font-family: $medium;
+                            font-size: .7rem;
+                            padding: .3rem .6rem;
+                            color: #4e3bce;
+                            display: inline-block;
+                            border-radius: 4px;
+                            background-color: #e8e8fa;
+                            margin: .1rem 0px;
+                            margin-right: .25rem;
+                        }
+                    }
+                }
+
+                .action-btn{
+                    display: flex;
+                    flex: 1 0 50%;
+                    align-self : flex-end;
+                    height: auto;
+                    order: 6;
+    
+                    .table-btn{
+                        font-size: .7rem;
+                        font-family: $medium;
+                        line-height: .9rem;
+                        padding: .3rem .6rem !important;
+                        background: #33cd5d !important;
+                        display: block;
+                        color: $pale-grey-three;
+                        border-radius: 2px;
+                        align-self: flex-end;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+     // ========== WALLET TABLE CONTAINER ==========
+
+    .wallet-table-container{
+        width: 100%;
+
+
+        .flex-table{
+            display: flex;
+            flex-direction: column;
+    
+            li{
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: baseline;
+                flex-wrap: nowrap;
+                border: none !important;
+                border-bottom: solid 1px $pale-grey-two !important;
+
+                li:last-of-type{
+                    border-bottom: none !important;
+                }
+    
+                & > * {
+                    flex: 1 1 20%;
+                }
+    
+            }
+    
+            li.table-head{
+                display: none;
+                border: none;
+            }
+
+    
+            li.table-data{
+                font-size: .8rem;
+                font-family: $book;
+                padding: 1.25rem 1rem;
+                flex-direction: row;
+                justify-content: space-between;
+                color: $dark;
+                flex-wrap: wrap;
+                max-width: 100%;
+
+                &:first-of-type{
+                    border: none !important;
+                }
+
+                &:last-of-type{
+                    border-bottom: none !important;
+                }
+                
+                .crypto{
+                    flex: 2 0 50%;
+                    margin-bottom: 1rem;
+                    order: 1;
+    
+                    .heading{
+                        display: flex;
+                        font-size: .6rem;
+                        color: $cool-grey;
+                        margin-bottom: .25rem;
+                    }
+    
+                    .value{
+                        display: flex;
+                        align-items: center;
+    
+                        .name{
+                            letter-spacing: 1px;
+                            color: $dark;
+                            font-family: $light;
+                        }
+                    }
+                }
+    
+                .amount,
+                .uncomfirmed{
+                    margin-bottom: 1rem;
+                    flex: 2 0 50%;
+                    order: 2;
+
+                    .heading{
+                        display: flex;
+                        font-size: .6rem;
+                        color: $cool-grey;
+                        margin-bottom: .25rem;
+                    }
+    
+                    .value{
+                        letter-spacing: 1px;
+                        color: $dark;
+                        font-family: $light;
+                    }
+                }
+
+                .worth{
+
+                    flex: 2 0 50%;
+                    margin-bottom: 1rem;
+                    order: 3;
+
+                    .heading{
+                        display: flex;
+                        font-size: .6rem;
+                        color: $cool-grey;
+                        margin-bottom: .25rem;
+                    }
+    
+                    .value{
+                        letter-spacing: 1px;
+                        color: $dark;
+                    }
+                }
+    
+                .actions{
+                    flex: 1 0 50%;
+                    order: 5;
+
+                    .action-buttons{
+                        display: block !important;
+                    }
+
+                    .action-dropdown{
+                        display: none !important;
+                    }
+
+                    .heading{
+                        display: flex !important;
+                        font-size: .6rem;
+                        color: $cool-grey;
+                        margin-bottom: .3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // ========== TRANSACTIONS TABLE CONTAINER ==========
+
+    .transactions-table-container{
+        width: 100%;
+    
+        .flex-table{
+            display: flex;
+            flex-direction: column;
+    
+            li{
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: baseline;
+                flex-wrap: nowrap;
+    
+                & > * {
+                    flex: 1 1 20%;
+                }
+    
+            }
+    
+            li.table-head{
+                display: none;
+                border: none;
+            }
+
+    
+            li.table-data{
+                font-size: .8rem;
+                font-family: $book;
+                padding: 1.25rem 1rem;
+                border: none;
+                border-bottom: solid 1px $pale-grey-two;
+                flex-direction: row;
+                justify-content: space-between;
+                color: $dark;
+                flex-wrap: wrap;
+                max-width: 100%;
+
+                &:first-of-type{
+                    border: none !important;
+                }
+
+                &:last-of-type{
+                    border-bottom: solid 1px $pale-grey-two;
+                }
+                
+                .crypto{
+                    flex: 2 0 50%;
+                    margin-bottom: 1rem;
+                    order: 0;
+    
+                    .heading{
+                        display: flex;
+                        font-size: .6rem;
+                        color: $cool-grey;
+                        margin-bottom: .25rem;
+                    }
+    
+                    .value{
+                        display: flex;
+                        align-items: center;
+    
+                        .name{
+                            letter-spacing: 1px;
+                            color: $dark;
+                            font-family: $book;
+                        }
+    
+                        .icon{
+                            margin-right: .5rem;
+                            height: 1.2rem;
+                            width: auto;
+    
+                            img{
+                                max-height: 1.2rem;
+                            }
+                        }
+                    }
+                }
+    
+                .qty,
+                .price{
+                    margin-bottom: 1rem;
+                    flex: 2 0 50%;
+
+                    .heading{
+                        display: flex;
+                        font-size: .6rem;
+                        color: $cool-grey;
+                        margin-bottom: .25rem;
+                    }
+    
+                    .value{
+                        letter-spacing: 1px;
+                        color: $dark;
+                        font-family: $light;
+                    }
+                }
+    
+                .total{
+
+                    flex: 2 0 50%;
+                    margin-bottom: 1rem;
+                    order: 0;
+    
+                    .heading{
+                        display: flex;
+                        font-size: .6rem;
+                        color: $cool-grey;
+                        margin-bottom: .25rem;
+                    }
+    
+                    .value{
+                        letter-spacing: 1px;
+                        color: $dark;
+                    }
+                }
+
+                .type{
+                    order: 0;
+                }
+
+                .status{
+                    order: 0;
+                }
+    
+                .type,
+                .status{
+
+                    flex: 2 0 50%;
+                    margin-bottom: 1rem;
+
+                    .heading{
+                        display: flex;
+                        font-size: .6rem;
+                        color: $cool-grey;
+                        margin-bottom: .25rem;
+                    }
+    
+                    .value{
+                        letter-spacing: 1px;
+                        color: $dark;
+                        font-family: $medium;
+                    }
+
+                    .success{
+                        color: $green-blue;
+                    }
+    
+                    .danger{
+                        color: $rosy-pink;
+                    }
+                }
+    
+                .actions{
+
+                    flex: 1 0 50%;
+                    order: 5;
+
+                    .heading{
+                        display: flex;
+                        font-size: .6rem;
+                        color: $cool-grey;
+                        margin-bottom: .25rem;
+                    }
+    
+                    .value{
+    
+                        .action{
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+
+    // ===== Header CSS FIX =====
+
+    .header{
+        padding: 2rem;
+    }
+
+    .main-content .container-fluid {
+        padding-right: 2rem !important;
+        padding-left: 2rem !important;
+    }
+
+    .price-table-container{
+        width: 100%;
+    
+        .flex-table{
+            display: flex;
+            flex-direction: column;
+    
+            li{
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-end;
+                flex-wrap: nowrap;
+    
+                .column-1{
+                    // flex: 1 1 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    flex-wrap: nowrap;
+                    padding-right: .25rem;
+    
+                    &>*{
+                        flex: 1 1 50%;
+                    }
+                }
+    
+                .column-2{
+                    // flex: 1 1 calc(50% - 5rem);
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+    
+                    &>*{
+                        flex: 1 1 50%;
+                    }
+                }
+    
+                .column-3{
+                    flex: 1 1 6.5rem;
+                    padding-left: .25rem;
+                }
+    
+                .graph{
+                    width: 6.5rem;
+                }
+    
+            }
+    
+            
+    
+    
+            li.table-head{
+                padding: 2rem 3rem 1rem;
+                font-size: .7rem;
+                font-family: $book;
+                color: $cool-grey;
+
+                .market-cap,
+                .change{
+                    display: none;
+                }
+            }
+    
+            li.table-data{
+                font-size: .9rem;
+                font-family: $book;
+                padding: 1rem 3rem;
+                border-top: solid 1px $pale-grey-two;
+                color: $dark;
+    
+                .name{
+                    display: flex;
+                    align-items: center;
+    
+                    .icon{
+                        height: 1.2rem;
+                        width: auto;
+                        padding-right: .5rem;
+    
+                        img{
+                            height: 100%;
+                            width: auto;
+                        }
+                    }
+                }
+    
+                .change{
+                    display: flex;
+                    align-items: center;
+    
+                    .icon{
+                        height: 1.5rem;
+                        width: auto;
+                        padding-right: .1rem;
+    
+                        img{
+                            height: 100%;
+                            width: auto;
+                        }
+                    }
+                }
+    
+                .graph{
+                    height: 2.5rem;
+    
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+    
+                .market-cap{
+                    font-size: .75rem;
+                    margin-top: .5rem;
+                }
+    
+                .price{
+                    font-size: .8rem;
+                    
+                }
+
+                .change{
+                    margin-top: .25rem;
+                    font-size: .75rem;
+                }
+            }
+        }
+    }
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+
+    // ===== Header CSS FIX =====
+
+    .header{
+
+        .header-container{
+
+
+            .action-container{
+
+                .filter-title{
+                    display: none !important;
+                }
+
+            }
+        }
+    }
+
+
+
+    // ================= WALLET CRYPTO TABLE CONTAINER ================= 
+
+
+    .wallet-table-container{
+        width: 100%;
+
+        .flex-table{
+            display: flex;
+            flex-direction: column;
+
+            .table-head > * ,
+            .table-data > *{
+                flex: 1 1 calc((100% - 4rem)/4);
+            }
+
+            .table-head > .actions ,
+            .table-data > .actions {
+                flex: 1 1 4rem;
+            }
+
+            li.table-head{
+                padding: 1.5rem 1.5rem 1rem;
+                font-size: .7rem;
+                font-family: $book;
+                color: $cool-grey;
+            }
+
+            li.table-data{
+                font-size: .8rem;
+                font-family: $book;
+                padding: 1rem 1.5rem;
+                border-top: solid 1px $pale-grey-two;
+                color: $dark;
+
+                .actions{
+
+                    .action-buttons{
+                        display: none;
+                    }
+                    .action-dropdown{
+                        display: block;
+                    }
+
+                    .heading{
+                        display: none;
+                    }
+
+                    .action-dropdown{
+                        position: relative;
+        
+                        .sort-btn{
+                            font-size: .65rem;
+                            color: $blurple;
+                            padding: .2rem .4rem;
+                            cursor: pointer;
+                            outline: none;
+                            background: transparent;
+        
+                            i{
+                                font-size: 1rem;
+                            }
+                            
+                        }
+        
+                        .sort-options{
+                            display: none;
+                            position: absolute;
+                            width: 6rem;
+                            z-index: 1;
+                            border: 1px solid #cbcbf7;
+                            border-radius: 4px;
+                            right: 3rem;
+        
+                            li{
+        
+                                color: $blurple;
+                                cursor: pointer;
+                                font-family: $medium;
+                                background: $very-light-purple;
+                                border-bottom: 1px solid #cbcbf7;
+                                text-align: start;
+                                display: inline-block;
+                                font-size: .7rem;
+                                padding: .5rem 1rem;
+                                line-height: 1rem;
+                                background-color: #e8e8fa;
+
+                                .icon{
+                                    padding-left: .25rem;
+                                }
+            
+                                &:last-of-type{
+                                    border-bottom-left-radius: 4px;
+                                    border-bottom-right-radius: 4px;
+                                    border-bottom: none;
+                                }
+        
+                                &:first-of-type{
+                                    border-top-left-radius: 4px;
+                                    border-top-right-radius: 4px;
+                                }
+            
+                            }
+                        }
+                    }
+
+                    .value{
+
+                        .action{
+                            font-family: $medium;
+                            display: inline-block;
+                            font-size: .7rem;
+                            padding: .5rem 1rem;
+                            line-height: 1rem;
+                            color: #4e3bce;
+                            border-radius: 4px;
+                            background-color: #e8e8fa;
+                            margin-left: .75rem;
+                            cursor: pointer;
+                            position: relative;
+
+                            .icon{
+                                padding-left: .2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+        // ================= BUY CRYPTO TABLE CONTAINER ================= 
+
+        .buy-table-container{
+            width: 100%;
+
+            .flex-table{
+                display: flex;
+                flex-direction: column;
+
+                li{
+                    display: flex;
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: baseline;
+                    flex-wrap: nowrap;
+
+                    & > * {
+                        flex: 1 1 20%;
+                    }
+
+                }
+
+                li.table-head{
+                    padding: 1.5rem 1.5rem 1rem;
+                    font-size: .7rem;
+                    font-family: $book;
+                    color: $cool-grey;
+                }
+
+                li.table-data{
+                    font-size: .8rem;
+                    font-family: $book;
+                    padding: 1rem 1.5rem;
+                    border-top: solid 1px $pale-grey-two;
+                    color: $dark;
+                }
+            }
+        }
+
+
+    .main-content{
+
+        .exchange-info{
+            padding: 2rem;
+            position: relative;
+            overflow: visible !important;
+    
+    
+            .title{
+                font-family: $book;
+                font-size: 1rem;
+                letter-spacing: 0.5px;
+                color: $dark;
+                margin-bottom: 1rem;
+            }
+    
+            .exchange-bridge{
+                display: block;
+                position: absolute;
+                border-radius: 100%;
+                box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.12);
+                background-color: #fff;
+                bottom: -3.8rem;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 2.8rem;
+                width: 2.8rem;
+                text-align: center;
+                z-index: 5;
+    
+                i{
+                    font-size: 1.2rem;
+                    line-height: 2.8rem;
+                    color: $blurple;
+                }
+            }
+        }
+    }
+ }
+
+ // Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+
+
+    // ============== General Table mobile screen fix ======
+
+    .table-card{
+        border-radius: 0px;
+        border-left: none !important;
+        border-right: none !important;
+
+        .table-pagination{
+            display: none;
+        }
+    }
+
+    // ============ Price Table mobile Screen Fix ==========
+
+    .pl-xs-0{
+        padding-left: 0px !important;
+    }
+
+    .mb-xs-1{
+        margin-bottom: .5rem !important;
+    }
+
+    .price-table-container{
+    
+        .flex-table{
+    
+            li.table-head{
+                padding: 1rem 1rem;
+                font-size: .65rem;
+                font-family: $book;
+                color: $cool-grey;
+            }
+    
+            li.table-data{
+                font-size: .9rem;
+                font-family: $book;
+                padding: 1.25rem 1rem;
+                border-top: solid 1px $pale-grey-two;
+                color: $dark;
+            }
+        }
+    }
+
+    .hide-in-small{
+        display: none;
+    }
+
+    // Main content CSS
+    .main-content {
+
+        .container-fluid {
+            padding: 0px 0px !important;
+
+            &>.row{
+                margin: 0px 0px !important; 
+            }
+        }
+
+        // .transaction-detail{
+        //     padding: 1.5rem !important;
+        // }
+
+    }
+
+
+    // Header CSS
+    .header{
+        padding: 1.25rem !important;
+    }
+
+    // Card css
+    .card{
+        margin-bottom: .75rem;
+        padding: .75rem;
+    }
+
+    // ======== Portfolio Transactions ==========
+
+    .portfolio-transactions{
+        padding: 0px !important;
+
+        .card-header{
+            padding: 1.25rem;
+            background-color: #fff;
+            border-bottom: 1px solid $pale-grey-two;
+
+            .sort-dropdown{
+                display: block;
+            }
+
+            .sort-group{
+                display: none;
+            }
+        }
+
+        .card-body{
+            padding: 0px;
+
+            .transaction-list{
+
+                li{
+                    padding: .75rem .75rem !important;
+                    border-bottom: 1px solid $pale-grey-two;
+
+                    &:last-of-type{
+                        border: none;
+                    }
+                }
+
+                .crypto-icon{
+                    display: inline-block !important;
+                    height: 1.25rem;
+                    width: 1.25rem;
+                }
+
+                .crr-name{
+                    margin-bottom: .35rem !important;
+                }
+            }
+        }
+    }
+
+    .personal-info,
+    .account-info{
+
+        padding: 1.25rem !important;
+
+        .row{
+            margin-bottom: .5rem;
+
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+
+        .verify-btn{
+            margin-bottom: .25rem;
+        }
+    }
+
+    // ---- EXCHANGE INFO CSS
+    .exchange-info{
+        padding: 1.25rem !important;
+        position: relative;
+        overflow: visible !important;
+
+
+        .title{
+            font-family: $book;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            color: $dark;
+            margin-bottom: 1rem;
+        }
+
+        .exchange-bridge{
+            display: block;
+            position: absolute;
+            border-radius: 100%;
+            box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.12);
+            background-color: #fff;
+            bottom: -3.2rem !important;
+            right: -3.2rem !important;
+            transform: translate(-50%, 50%);
+            height: 2.8rem;
+            width: 2.8rem;
+            text-align: center;
+            z-index: 5;
+
+            i{
+                font-size: 1.2rem;
+                line-height: 2.8rem;
+                color: $blurple;
+            }
+        }
+    }
+
+    .card-body{
+        padding: 0px;
+
+        .transaction-list{
+
+            li{
+                padding: .75rem .75rem !important;
+                border-bottom: 1px solid $pale-grey-two;
+
+                &:last-of-type{
+                    border: none;
+                }
+            }
+
+            .crypto-icon{
+                display: inline-block !important;
+                height: 1.25rem;
+                width: 1.25rem;
+            }
+
+            .crr-name{
+                margin-bottom: .35rem !important;
+            }
+        }
+    }
+
+    .trade-box{
+        border-radius: 4px;
+        background-color: #fff;
+        border: 1px solid $pale-grey-two;
+        margin-bottom: 1.25rem;
+        padding: 1rem;
+        position: relative;
+
+        .pay-option{
+            font-family: $medium;
+            font-size: .7rem;
+            padding: .2rem .5rem;
+            display: inline-block;
+            color: $blurple;
+            border-radius: 4px;
+            background-color: $very-light-purple;;
+            margin-top: .25rem;
+        }
+
+        .review-bridge{
+            display: block;
+            position: absolute;
+            border-radius: 21px;
+            box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.12);
+            background-color: #fff;
+            bottom: -3rem;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 2.25rem;
+            width: 2.25rem;
+            text-align: center;
+            z-index: 1;
+
+            i{
+                font-size: .9rem;
+                line-height: 2.25rem;
+                color: $blurple;
+            }
+        }
+
+        .crypto-icon{
+            display: none;
+        }
+
+        .crypto-icon-lg{
+            display: none !important;
+        }
+
+
+        .crypto-value{
+            font-family: $book;
+            font-size: .7rem;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 1.1px;
+            color: $blurple;
+        }
+
+        .crypto-name{
+            font-family: $book;
+            font-size: .9rem;
+            line-height: 1.25;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.2px;
+            color: $dark;
+            margin-bottom: -.2rem;
+
+            .crypto-icon-sm{
+                display: inline-block !important;
+                height: 1.25rem;
+                width: auto;
+            }
+        }
+
+        .trade-type{
+            font-family: $book;
+            font-size: .7rem;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $cool-grey;
+            text-align: left !important;
+        }
+
+        .trade-value{
+            font-family: $light;
+            font-size: .8rem;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 1.4px;
+            color: $dark;
+        }
+    }
+
+    // ---- DEAL DETAIL CSS ----
+
+    .deal-detail{
+        padding: 1.25rem !important;
+
+        .row{
+            margin-bottom: 0px !important;
+
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+
+        .value{
+            margin-bottom: 1.25rem !important;
+        }
+
+        .mb-sm{
+            margin-bottom: 1.25rem !important;
+        }
+    
+    
+    }
+
+    // ---- TERMS CSS ----
+
+    .terms{
+        padding: 1.25rem !important;
+        flex: 1 1 auto;
+        
+        .heading{
+            margin-bottom: .75rem !important;
+            margin-top: .25rem !important;
+        }
+    }
+
+    // ---- TRANSACTION DETAILS ----
+
+    .transaction-detail{
+        padding: 1.25rem !important;
+
+        .row{
+
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
+    // ---- CHAT BOX CSS ----   
+    .chat-box{
+        padding: 0px !important;
+
+        .chat-header{
+            padding: 1.25rem 1.75rem .75rem !important;
+
+            .user-info{
+
+                margin-bottom: 1rem !important;
+            }
+        }
+
+        .chat-dropdown{
+            padding: .75rem 1.25rem !important;
+        }
+
+        .chat-container{
+            padding: .75rem 1.25rem !important;
+
+            .scrollable-body{
+                width: 100%;
+                height: 100%;
+                max-height: calc(70vh - 4.5rem);
+            }
+        }
+
+        .chat-form{
+            padding: .25rem 1.25rem !important;
+        }
+    }
+
+    // ---- Custom Modals Starts
+
+    .modal{
+        position: fixed;
+        z-index: 1050;
+        padding-right: 0px !important;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: scroll !important;
+        outline: 0;
+        transition: opacity .15s linear;
+
+        .modal-dialog{
+            position: relative;
+            display: flex;
+            min-height: calc(100% - 1rem);
+            align-items: center;
+            width: auto;
+            margin: .5rem auto;
+            pointer-events: none;
+            
+            .modal-contant{
+                position: relative;
+                width: 100%;
+                pointer-events: auto;
+                border: 1px solid transparent;
+                border-radius: .25rem;
+                outline: 0;
+                background-color: #fff;
+                padding: 1.25rem !important;
+
+                .modal-header{
+                    margin-bottom: 1.5rem;
+
+                    .heading{
+                        font-family: $book;
+                        font-size: 1rem;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: 0.5px;
+                        line-height: 1.4rem;
+                        color: $dark;
+
+                        .header-icon{
+                            display: inline-block;
+                            height: 1.4rem;
+                            width: 1.4rem;
+                            border-radius: 1px solid transparent;
+                            border-radius: 100%;
+                            background-color: $very-light-purple;
+                            text-align: center;
+                            margin-right: .5rem;
+
+                            i{
+                                font-size: .7rem;
+                                line-height: 1.4rem;
+                                color: $blurple;
+                            }
+                        }
+
+                        .name{
+                            font-family: $light;
+                            font-style: none !important;
+                        }
+                    }
+
+                    .close-btn{
+                        height: 1rem;
+                        width: 1rem;
+                        text-align: center;
+                        cursor: pointer !important;
+                        background: #fff;
+
+                        i{
+                            line-height: 1rem;
+                            font-size: .9rem;
+                            color: $dusk;
+
+                        }
+                    }
+                }
+
+                .modal-body{
+
+                    .custom-form{
+                        margin-bottom: 1.25rem;
+                    }
+
+                    .user-img{
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        border-radius: 100%;
+                    }
+
+                    .option-link{
+                        font-family: $book;
+                        font-size: .7rem;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: 0.3px;
+                        color: $blurple;
+                        cursor: pointer;
+                        margin-bottom: 1.5rem;
+
+                        i{
+                            padding-left: .25rem;
+                        }
+                    }
+
+                    .toggle-text{
+                        font-family: $medium;
+                        font-size: .7rem;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: 0.6px;
+                        color: $cool-grey;
+                        margin-bottom: 1.25rem;
+
+                        .toggle-dec{
+                            display: block;
+                            font-family: $book;
+                            font-size: .6rem;
+                            font-weight: normal;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: normal;
+                            letter-spacing: 0.4px;
+                            color: $cool-grey;
+                            padding-top: .25rem;
+                        }
+                    }
+
+                    .qr-code{
+                        height: 10rem;
+                        width: auto;
+                        margin-bottom: 1.5rem;
+                        overflow: hidden;
+
+                        img{
+                            height: 100%;
+                            width: auto;
+                        }
+                    }
+
+                    .share-btn{
+                        display: inline-block;
+                        font-family: $medium;
+                        font-size: .8rem;
+                        font-weight: 500;
+                        letter-spacing: 0.3px;
+                        color: $blurple;
+                        border-radius: 3px;
+                        box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.03);
+                        background-color: $very-light-purple;
+                        padding: .5rem 1rem;
+                        cursor: pointer;
+
+                        i{
+                            font-size: .8rem;
+                            padding-left: .25rem;
+                        }
+                    }
+        
+                }
+            }
+        }
+
+        .mini-modal{
+            max-width: 500px;
+            padding: .5rem; 
+        }
+        
+        .jumbo-modal{
+            max-width: 990px;
+            padding: .5rem;
+        }
+    }
+
+    // --- Table pagination
+
+
+    // ======================== Asset Portfolio====================
+
+    .asset-portfolio{
+        padding: 0px !important;
+
+        .card-header{
+            padding: 1.5rem 1.5rem 1rem;
+        }
+
+        .asset-stats{
+            padding: 1rem 1.5rem 1.5rem;
+            border-bottom: 1px solid $pale-grey-two;
+
+            .doughnut-chart{
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .asset-list{
+
+
+            .list-table{
+                display: flex;
+                flex-direction: column;
+
+                .table-data{
+                    padding: 1rem 1rem;
+                    flex: 1 1 auto;
+
+                    .name{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+
+                        .icon{
+                            height: 1.25rem;
+                            width: 1.25rem;
+                            margin-right: .5rem;
+
+                            img{
+                                height: 100%;
+                                width: auto;
+                            }
+                        }
+
+                        .crr{
+                            font-size: .8rem;
+                            font-family: $book;
+                            color: $dark;
+                        }
+                    }
+
+                    .change{
+                        font-size: .75rem;
+                        font-family: $light;
+                        color: $dark;
+                    }
+
+                    .market-cap{
+                        font-family: $light;
+                        color: $dark;
+                        font-size: .75rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+ }
+
+ .end-to-end{
+     padding: 0px !important;
+ }

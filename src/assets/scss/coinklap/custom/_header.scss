@@ -1,0 +1,232 @@
+.header{
+    padding: 2rem 3rem;
+
+    // ===== ACTION CONTAINER FOR BUY TABLE =====
+
+    .action-container{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 1.25rem;
+        width: 100%;
+    }
+
+
+    .m-filter-container{
+        width: 100%;
+
+        .title{
+            font-size: .7rem;
+            line-height: .9rem;
+            font-family: $book;
+            color: $cool-grey;
+            margin-bottom: .5rem;
+        }
+
+        .filter-options{
+            display: flex;
+            justify-content: flex-start;
+
+            .payment-opt{
+                margin-left: 1rem;
+            }
+
+            .custom-form{
+                max-width: 12rem;
+
+                select{
+                    font-size: .6rem;
+                }
+
+                input{
+                    font-size: .6rem;
+                }
+                
+                #currencyOpt{
+                    width: 4.25rem;
+                }
+            }
+        }
+    }
+
+
+    // ========== HEADER BUTTONSS =============
+
+    .header-btn{
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        display: inline-block;
+        font-family: $medium;
+        font-size: .75rem;
+        padding: .7rem 1rem;
+        color: $steel;
+        line-height: 1rem;
+        border-radius: 5px;
+        border: 1px solid $pale-grey-two;
+        background-color: #fafcff;
+        box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.03);
+        margin-top: 1rem;
+        margin-top: 0rem;
+        cursor: pointer;
+
+    
+        i{
+            font-size: .75rem;
+            margin-left: .2rem;
+        }
+    }
+
+    .green{
+        color: #fff !important;
+        background: $green !important;
+        border-color: $green !important;
+    }
+
+    // ========= HEADER CONTAINER ===========
+
+    .header-container{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        // =============== Mobile Container Title ==============
+
+        .title{
+            padding-right: .5rem;
+
+            .sub-heading{
+                font-family: $book;
+                font-size: .7rem;
+                line-height: 1.25;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 1px;
+                margin-bottom: .25rem;
+                color: $cool-grey;
+            }
+
+            .heading{
+                font-family: $book;
+                font-size: 1.25rem;
+                line-height: 1.25;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: $blurple;
+
+                span{
+                    font-family: $light;
+
+                    i{
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+
+        // ========== HEADER ACTIONS =============
+
+        .actions{
+
+
+            // ========== SORT DROPDOWN CSS ============
+
+            .sort-dropdown{
+                display: none;
+                position: relative;
+
+                .sort-btn{
+                    font-size: .65rem;
+                    color: $blurple;
+                    padding: .5rem .75rem;
+                    cursor: pointer;
+                    font-family: $medium;
+                    background: $very-light-purple;
+                    border-radius: 4px;
+
+                    i{
+                        padding-left: .2rem;
+                    }
+                    
+                }
+
+                .sort-options{
+                    display: none;
+                    position: absolute;
+                    width: 100%;
+                    z-index: 1;
+                    border: 1px solid #cbcbf7;
+                    border-radius: 4px;
+
+                    li{
+
+                        font-size: .65rem;
+                        color: $blurple;
+                        padding: .5rem .75rem;
+                        cursor: pointer;
+                        font-family: $medium;
+                        background: $very-light-purple;
+                        border-bottom: 1px solid #cbcbf7;
+    
+                        &:last-of-type{
+                            border-bottom-left-radius: 4px;
+                            border-bottom-right-radius: 4px;
+                            border-bottom: none;
+                        }
+
+                        &:first-of-type{
+                            border-top-left-radius: 4px;
+                            border-top-right-radius: 4px;
+                        }
+    
+                    }
+                }
+            }
+
+            // ========== sort group BUTTONSS =============
+
+            .sort-group{
+
+                display: block;
+
+                .sort-options{
+                    display: flex;
+                    flex-direction: row-reverse;
+
+                    li{
+
+                        font-size: .8rem;
+                        color: $blurple;
+                        padding: .5rem .75rem;
+                        cursor: pointer;
+                        margin-left: .2rem;
+                        font-family: $medium;
+    
+                        &:last-of-type{
+                            margin-left: 0px;
+                        }
+    
+                    }
+    
+                    .active{
+    
+                        background: $very-light-purple;
+                        border-radius: 4px;
+    
+                    }
+                }
+            }
+        }
+    }
+}

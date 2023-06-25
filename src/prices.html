@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/head.html", {
+        "title": "Coinklap"
+    })
+
+    <!--  Navbar (Sidebar) ends  -->
+
+</head>
+
+<body>
+    
+    
+    <!--  Navbar (Sidebar) starts  -->
+
+    @@include("partials/navbar.html",{
+        "page": "prices.html"
+      })
+
+    <!--  Navbar (Sidebar) ends  -->
+    
+    <!--  Main content starts  -->    
+    
+    <div class="main-content">
+       
+        <!-- Header Starts -->
+
+        <div class="header">
+            <div class="header-container">
+                <div class="title">
+                    <h3 class="sub-heading">
+                        Overview
+                    </h3>
+                    <h2 class="heading">
+                        Prices
+                    </h2>
+                </div>
+                <div class="actions">
+                    <div class="sort-dropdown">
+                        <button class="sort-btn" id="priceDaySortingBtn">All Time <i class="fas fa-sort"></i></button>
+                        <ul class="sort-options" id="priceDaySortOptions">
+                            <li class="active">All Time</li>
+                            <li>Year</li>
+                            <li>Month</li>
+                            <li>Week</li>
+                            <li>Day</li>
+                        </ul>
+                    </div>
+                    <div class="sort-group">
+                        <ul class="sort-options">
+                            <li class="active">All Time</li>
+                            <li>Year</li>
+                            <li>Month</li>
+                            <li>Week</li>
+                            <li>Day</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Header Ends -->    
+    
+        <!--  Main container starts   -->
+        <div class="container-fluid end-to-end">
+            <div class="table-card">
+                <div class="price-table-container">
+                    <ul class="flex-table">
+                        <li class="table-head">
+                            <div class="column-1">
+                                <div class="name">Currency</div>
+                                <div class="market-cap">Market Cap</div>
+                            </div>
+                            <div class="column-2">
+                                <div class="price">Price</div>
+                                <div class="change">Change</div>
+                            </div>
+                            <div class="column-3">
+                                <div class="graph">Chart</div>
+                            </div>
+                            
+                        </li>
+                        <li class="table-data">
+
+                            <div class="column-1">
+                                <div class="name">
+                                    <div class="icon">
+                                        <img src="./assets/icons/crypto-icons/bitcoin-cash.svg" alt="">
+                                    </div>
+                                    <div>Bitcoin Cash</div>
+                                </div>
+                                <div class="market-cap">$112,799,947,980</div>  
+                            </div>
+                            <div class="column-2">
+                                <div class="price">$6,530</div>
+                                <div class="change">
+                                    <div class="icon">
+                                        <img src="./assets/icons/general-icons/up.svg" alt="">
+                                    </div>
+                                    <div class="green">12%</div>
+                                </div>
+                            </div>
+                            <div class="column-3">
+                                    <div class="graph"><img src="./assets/icons/general-icons/short-graph.svg" alt=""></div>
+                            </div>
+
+                        </li>
+                        <li class="table-data">
+
+                                <div class="column-1">
+                                    <div class="name">
+                                        <div class="icon">
+                                            <img src="./assets/icons/crypto-icons/omisego-logo.svg" alt="">
+                                        </div>
+                                        <div>Omisego</div>
+                                    </div>
+                                    <div class="market-cap">$112,799,947,980</div>  
+                                </div>
+                                <div class="column-2">
+                                    <div class="price">$6,530</div>
+                                    <div class="change">
+                                        <div class="icon">
+                                            <img src="./assets/icons/general-icons/up.svg" alt="">
+                                        </div>
+                                        <div class="green">12%</div>
+                                    </div>
+                                </div>
+                                <div class="column-3">
+                                        <div class="graph"><img src="./assets/icons/general-icons/short-graph.svg" alt=""></div>
+                                </div>
+
+                            </li>
+                    </ul>
+                </div>
+                <div class="table-pagination align-items-center">
+                    <ul class="count">
+                        <li class="inactive">Previous</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>Next</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    <!--  Main container ends   -->
+
+    </div>
+    
+    <!--  Main content ends-->
+
+    <!-- Optional JavaScript -->
+
+    @@include("./partials/scripts.html")
+
+</body>
+
+</html>
+
