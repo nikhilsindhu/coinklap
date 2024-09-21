@@ -1,17 +1,17 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = global || self, factory(global.az = {}));
-}(this, function (exports) { 'use strict';
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.az = {}));
+}(this, (function (exports) { 'use strict';
 
   var fp = typeof window !== "undefined" && window.flatpickr !== undefined
       ? window.flatpickr
       : {
-          l10ns: {}
+          l10ns: {},
       };
   var Azerbaijan = {
       weekdays: {
-          shorthand: ["Baz", "BzE", "ÇAx", "Çər", "CAx", "Cüm", "Şən"],
+          shorthand: ["B.", "B.e.", "Ç.a.", "Ç.", "C.a.", "C.", "Ş."],
           longhand: [
               "Bazar",
               "Bazar ertəsi",
@@ -20,7 +20,7 @@
               "Cümə axşamı",
               "Cümə",
               "Şənbə",
-          ]
+          ],
       },
       months: {
           shorthand: [
@@ -50,7 +50,7 @@
               "Oktyabr",
               "Noyabr",
               "Dekabr",
-          ]
+          ],
       },
       firstDayOfWeek: 1,
       ordinal: function () {
@@ -60,7 +60,8 @@
       weekAbbreviation: "Hf",
       scrollTitle: "Artırmaq üçün sürüşdürün",
       toggleTitle: "Aç / Bağla",
-      amPM: ["GƏ", "GS"]
+      amPM: ["GƏ", "GS"],
+      time_24hr: true,
   };
   fp.l10ns.az = Azerbaijan;
   var az = fp.l10ns;
@@ -70,4 +71,4 @@
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
